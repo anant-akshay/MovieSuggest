@@ -1,0 +1,21 @@
+<%- include("partials/header") %>
+
+<div id="container">
+		<h1>To-Do List <span id="toggleForm"><i class="far fa-edit"></i></span></h1>
+		<form class="inlineForm" action="/others" method="POST">
+			<input type="text" name="name" placeholder="movie name" />
+		</form>
+		<% othersMovies.forEach(function(othersMovie){%>
+			<ul id = "myList">	
+				<li>
+					<form class="inlineForm" action="/others/<%=othersMovie._id %>?_method=DELETE" method="POST">
+						<button type="submit" >
+							<i class="fas fa-trash"></i>
+						</button>
+					</form>
+					<%=othersMovie.name %>-<%=othersMovie.language%>
+				</li>
+			</ul>
+		<%})%>
+	</div>
+<%- include("partials/footer") %>

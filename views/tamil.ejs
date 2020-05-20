@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+
+<div id="container">
+		<h1>To-Do List <span id="toggleForm"><i class="far fa-edit"></i></span></h1>
+		<form action="/tamil" method="POST">
+			<input type="text" name="name" placeholder="movie name" />
+		</form>
+		<% tamilMovies.forEach(function(tamilMovie){%>
+			
+			<ul id = "myList">	
+				<li>
+					<form action="/telugu/<%=tamilMovie._id %>?_method=DELETE" method="POST">
+						<button type="submit" >
+							<i class="fas fa-trash"></i>
+						</button>
+					</form>
+					<%=tamilMovie.name %>
+				</li>
+			</ul>
+		<%})%>
+	</div>
+
+
+
+<%- include("partials/footer") %>
