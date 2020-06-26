@@ -18,8 +18,8 @@ var hindiRoutes    = require("./routes/hindi");
 var kannadaRoutes    = require("./routes/kannada");
 var othersRoutes    = require("./routes/others");
 
-var url = process.env.DATABASEURL || "mongodb://localhost:27017/MovieSuggest"
-mongoose.connect("mongodb://localhost/MovieSuggest",{useNewUrlParser: true, useUnifiedTopology: true});
+var url = process.env.DATABASEURL || "mongodb://localhost/MovieSuggest"
+mongoose.connect(url,{useNewUrlParser: true, useUnifiedTopology: true});
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
 app.use(express.static(__dirname + "/public"));
