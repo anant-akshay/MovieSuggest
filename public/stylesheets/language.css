@@ -88,5 +88,61 @@ body {
 	
 }
 @media (max-width: 544px) {  
-  body {font-size:2rem;} /*1rem = 16px*/
+  body {font-size:;} /*1rem = 16px*/
 }
+
+/* .text-responsive {
+  font-size: calc(100% + 1vw + 1vh);
+}
+ */
+/* Small screens */
+/* @media only screen and (max-width: 600px) {
+  .navbar {
+    bottom: 0;
+    width: 100vw;
+    height: 5rem;
+  }
+
+  .logo {
+    display: none;
+  }
+
+  .navbar-nav {
+    flex-direction: row;
+  }
+
+  .nav-link {
+    justify-content: center;
+  }
+
+  main {
+    margin: 0;
+  }
+} */
+
+/* Large screens */
+/* @media only screen and (min-width: 600px) {
+  .navbar {
+    top: 0;
+    width: 5rem;
+    height: 100vh;
+  }
+
+  .navbar:hover {
+    width: 16rem;
+  }
+
+  .navbar:hover .link-text {
+    display: inline;
+  }
+
+  .navbar:hover .logo i
+  {
+    margin-left: 11rem;
+  }
+
+  .navbar:hover .logo-text
+  {
+    left: 0px;
+  }
+} */
