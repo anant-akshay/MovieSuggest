@@ -2,14 +2,14 @@
 
 <div id="container">
 		<h1>To-Do List <span id="toggleForm"><i class="far fa-edit"></i></span></h1>
-		<form action="/tamil" method="POST">
+		<form class="inlineForm" action="/tamil" method="POST">
 			<input type="text" name="name" placeholder="movie name" />
 		</form>
 		<% tamilMovies.forEach(function(tamilMovie){%>
 			
 			<ul id = "myList">	
 				<li>
-					<form class="inlineForm" action="/tamil/<%=teluguMovie._id %>?_method=DELETE" method="POST">
+					<form class="inlineForm" action="/tamil/<%=tamilMovie._id %>?_method=DELETE" method="POST">
 						<button type="submit" >
 							<i class="fas fa-trash"></i>
 						</button>
