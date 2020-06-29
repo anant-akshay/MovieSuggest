@@ -87,9 +87,15 @@ body {
 	background: black;
 	
 }
-@media (max-width: 544px) {  
-  body {font-size:;} /*1rem = 16px*/
-}
+
+/* @media only screen and (max-width : 979px){
+
+	body{
+		
+		transform: scale(1);
+	}
+ 
+} */
 
 /* .text-responsive {
   font-size: calc(100% + 1vw + 1vh);
